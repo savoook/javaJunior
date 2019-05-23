@@ -54,4 +54,13 @@ public class FindFilesTaskImpl extends TaskImpl implements FindFilesTask {
             out.println(f.getAbsolutePath());
         }
     }
+
+    @Override
+    public String toString() {
+        return "FindFilesTaskImpl{" +
+                "directory='" + directory + '\'' +
+                ", searchString='" + searchString + '\'' +
+                ", out=" + out +
+                '}';
+    }
 }
