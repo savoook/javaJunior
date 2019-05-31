@@ -28,4 +28,22 @@ public class DrobnoeChislo {
             int ostatok = chislitel % znamenatel;
             System.out.printf("%d %d/%d", zeloe, ostatok, znamenatel);
         }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        DrobnoeChislo that = (DrobnoeChislo) o;
+
+        if (chislitel != that.chislitel) return false;
+        return znamenatel == that.znamenatel;
     }
+
+    @Override
+    public int hashCode() {
+        int result = chislitel;
+        result = 31 * result + znamenatel;
+        return result;
+    }
+}

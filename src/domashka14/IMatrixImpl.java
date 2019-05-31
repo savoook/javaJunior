@@ -141,11 +141,35 @@ public class IMatrixImpl implements IMatrix {
 
     @Override
     public double determinant() throws Exception {
-        if (matrix.length != matrix[0].length){
+        if (matrix.length != matrix[0].length) {
             throw new Exception("матрица не квадратная");
         }
+        double k = 0;
+        int index = 0;
+        for (int itr = 0; itr < this.matrix[0].length - 1; itr++) {
+            for (int i = 1 + itr; i < this.matrix.length; i++) {
+                k = -1 * matrix[i][itr] / matrix[itr][itr];
+                for (int j = 0 + itr; j < this.matrix[0].length; j++) {
+                    matrix[i][j] = k * matrix[itr][j] + matrix[i][j];
+                }
+            }
+        }
+        for (int m = 0; m <= matrix.length - 1; m++) {
+            for (int h = 0; h <= matrix[0].length - 1; h++) {
+                System.out.print(matrix[m][h] + " | ");
+            }
+            System.out.println();
+        }
+        double determinant = 1;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (i == j) {
+                    determinant = determinant * matrix[i][j];
+                }
+            }
+        }
 
-        return 0;
+        return determinant;
     }
 
     @Override
@@ -166,7 +190,7 @@ public class IMatrixImpl implements IMatrix {
 
     @Override
     public boolean isIdentityMatrix() throws Exception {
-        if (matrix.length != matrix[0].length){
+        if (matrix.length != matrix[0].length) {
             throw new Exception("матрица не квадратная");
         }
         boolean identityMatrix = true;
@@ -202,7 +226,7 @@ public class IMatrixImpl implements IMatrix {
 
 
         return identityMatrix;
-}
+    }
 
     @Override
     public boolean isSquareMatrix() {

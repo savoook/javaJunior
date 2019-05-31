@@ -18,7 +18,7 @@ public class TaskExecutorImpl extends Thread implements TaskExecutor {
         while (true) {
             Task task = storage.get();
             if (task == null) {
-                System.out.println(Thread.currentThread().getName() + "задач не обнаружил, завершаю раюоту");
+                System.out.println(Thread.currentThread().getName() + "задач не обнаружил, завершаю работу");
                 break;
             }
             try {
