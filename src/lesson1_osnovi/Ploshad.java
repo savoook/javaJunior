@@ -1,4 +1,4 @@
-package lesson1;
+package lesson1_osnovi;
 
 public class Ploshad {
     public static void main(String[] args) {

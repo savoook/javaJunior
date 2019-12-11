@@ -1,4 +1,4 @@
-package lesson11;
+package lesson11_collection1;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -14,6 +14,7 @@ public class Main {
         texts.add("eudruude");
         texts.add(0, "!!!!");
         texts.set(1, "222");
+        texts.remove(1);
         //texts.clear();
         //texts.contains("eudruuede");
 

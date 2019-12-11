@@ -1,4 +1,4 @@
-package lesson2;
+package lesson2_zikly;
 
 public class Main1 {
     public static void main(String[] args) {
@@ -12,5 +12,5 @@ public class Main1 {
         {
             System.out.println("Длина больше");
         }
-    }
+     }
 }

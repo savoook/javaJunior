@@ -1,6 +1,6 @@
-package lesson12;
+package lesson12_collection;
 
-import lesson11.Coin;
+import lesson11_collection1.Coin;
 
 import java.util.Comparator;
 import java.util.TreeSet;

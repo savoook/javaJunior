@@ -1,4 +1,4 @@
-package lesson1;
+package lesson1_osnovi;
 
 public class Main1 {
     public static void main(String[] args) {

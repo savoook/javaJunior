@@ -1,4 +1,4 @@
-package lesson2;
+package lesson2_zikly;
 
 public class Main3 {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class Main3 {
             System.out.println("равнобедренный треугольник");
         }
         if (a != b && a != c && b != c) {
-            System.out.println("разносторонний треугольник");
+            System.out.println("треугольник");
         }
     }
 }

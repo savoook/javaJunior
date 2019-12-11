@@ -1,4 +1,4 @@
-package lesson11;
+package lesson11_collection1;
 
 public class Coin implements Comparable<Coin> {
     private int nominal;

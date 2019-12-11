@@ -1,4 +1,4 @@
-package lesson2;
+package lesson2_zikly;
 
 public class Main2 {
     public static void main(String[] args) {
