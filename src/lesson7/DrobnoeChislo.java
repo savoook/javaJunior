@@ -16,18 +16,19 @@ public class DrobnoeChislo {
         }
     }
 
-        public int getZnamenatel () {
-            return znamenatel;
-        }
+    public int getZnamenatel() {
+        return znamenatel;
+    }
 
-        public int getChislitel () {
-            return chislitel;
-        }
-        public void printInfo () {
-            int zeloe = chislitel / znamenatel;
-            int ostatok = chislitel % znamenatel;
-            System.out.printf("%d %d/%d", zeloe, ostatok, znamenatel);
-        }
+    public int getChislitel() {
+        return chislitel;
+    }
+
+    public void printInfo() {
+        int zeloe = chislitel / znamenatel;
+        int ostatok = chislitel % znamenatel;
+        System.out.printf("%d %d/%d", zeloe, ostatok, znamenatel);
+    }
 
     @Override
     public boolean equals(Object o) {

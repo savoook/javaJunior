@@ -29,7 +29,7 @@ public class Main1 {
             linkedListList.get(i);
         }
         long endTime1 = System.currentTimeMillis();
-        System.out.println("ArrayList add: " + (startTime4 - startTime3));
-        System.out.println("LinkedList add: " + (endTime1 - startTime3));
+        System.out.println("ArrayList get: " + (startTime4 - startTime3));
+        System.out.println("LinkedList get: " + (endTime1 - startTime3));
     }
 }

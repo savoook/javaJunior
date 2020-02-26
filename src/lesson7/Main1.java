@@ -6,10 +6,10 @@ public class Main1 {
         DrobnoeChislo chislo2=new DrobnoeChislo();
 
         chislo1.setChislitel(2);
-        chislo1.setZnamenatel(5);
+        chislo1.setZnamenatel(4);
 
-        chislo2.setChislitel(7);
-        chislo2.setZnamenatel(4);
+        chislo2.setChislitel(3);
+        chislo2.setZnamenatel(5);
 
         CalkDrobey calculator=new CalkDrobey();
         DrobnoeChislo result=calculator.summa(chislo1,chislo2);
