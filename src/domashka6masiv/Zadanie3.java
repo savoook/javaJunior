@@ -1,4 +1,4 @@
-package domashka6;
+package domashka6masiv;
 
 public class Zadanie3 {
     public static void main(String[] args) {

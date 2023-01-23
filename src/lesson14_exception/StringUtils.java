@@ -1,4 +1,4 @@
-package lesson14;
+package lesson14_exception;
 
 /**
  * Утилитный класс для работы со строками

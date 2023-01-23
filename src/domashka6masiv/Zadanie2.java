@@ -1,12 +1,11 @@
-package domashka6;
+package domashka6masiv;
 
-public class Zadanie1 {
+public class Zadanie2 {
     public static void main(String[] args) {
         int[][] num = {{1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}};
         for (int i = 0; i < num.length; i++) {
-            for (int j = i; j < num.length; j++) {
-                System.out.print(num[i][j] + " ");
-            }
+            int j = i;
+            System.out.print(num[i][j] + " ");
             System.out.println();
             int k = 0;
             do {
